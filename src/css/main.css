@@ -3,7 +3,7 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Bold.eot");
   src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -11,38 +11,31 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.eot");
   src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 /* variables */
 :root {
-  --primary: #d13980;
+  --primary: #0375bf;
   --secondary: #fff;
   --success: #3bad4b;
-  --info: #66c0da;
+  --info: #addcfb;
   --warning: #f7ca2e;
   --danger: #f86c6b;
   --site-bg-color: #FFFFFF;
-  --main-color: #03D6E7;
-  --sub-main-color: #FED213;
-  --main-accent-color: #201E50;
-  --main-light: #A1A1A1;
-  --footer-color: #201E50;
-  --btn-bg: #03D6E7;
-  --btn-border: #03D6E7;
-  --btn-contrast: #0DCC71;
+  --main-color: #0375bf;
+  --sub-main-color: #addcfb;
+  --footer-color: #f7f7f7;
+  --btn-bg: #0375bf;
   --btn-text: #FFFFFF;
-  --btn-text-hover: #03D6E7;
-  --text-color: #1F1F1F;
+  --text-color: #000000;
   --text-light: #5F5F5F;
   --text-contrast: #ffffff;
-  --text-main-color: #03D6E7;
-  --border-color: #03D6E7;
-  --icon-color: #1F1F1F;
-  --active-icon-color: #03D6E7;
-  --link-color: #1F1F1F;
-  --link-color-active: #03D6E7;
+  --border-color: #addcfb;
+  --icon-color: #0375bf;
+  --active-icon-color: #addcfb;
+  --link-color: #0375bf;
   --section-bottom: 48px;
 }
 
@@ -182,9 +175,9 @@ select {
 BODY, HTML {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
   width: 100%;
   min-width: 360px;
   height: 100%;
@@ -234,7 +227,7 @@ input:focus {
 
 textarea {
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2;
   border: 1px solid #D6D6D6;
   resize: none;
   outline: none;
@@ -283,39 +276,18 @@ a:active {
   /* НЕ УДАЛЯТИ */
 }
 
-.main_title,
-h1 {
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 39px;
-  text-decoration: none;
-  color: var(--text-color);
-  margin-bottom: 40px;
-  transition: 0.3s;
+h1,
+.main_title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
-a.main_title:hover {
-  opacity: 0.7;
-}
-
-.sub_title,
-h2,
-h3 {
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
-  text-decoration: none;
-  color: var(--text-color);
-  margin-bottom: 24px;
-  transition: 0.3s;
-}
-
-a.sub_title:hover {
-  opacity: 0.7;
+h3,
+.item_title {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 .centre {

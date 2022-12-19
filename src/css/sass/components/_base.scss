@@ -2,9 +2,9 @@
 BODY, HTML {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
     width: 100%;
     min-width: 360px;
     height: 100%;
@@ -54,7 +54,7 @@ input:focus {
 
 textarea  {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     border: 1px solid #D6D6D6;
     resize: none;
     outline: none;
@@ -102,40 +102,30 @@ a:active {
     color: inherit;  /* НЕ УДАЛЯТИ */
 }
 
-.main_title,
-h1 {
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 39px;
-    text-decoration: none;
-    color: var(--text-color);
-    margin-bottom: 40px;
-    transition: 0.3s;
+h1,
+.main_title{
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
-a.main_title:hover {
-    opacity: 0.7;
-}
-
-.sub_title,
 h2,
-h3 {
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    text-decoration: none;
-    color: var(--text-color);
-    margin-bottom: 24px;
-    transition: 0.3s;
+.sub_title{
+
 }
 
-a.sub_title:hover {
-    opacity: 0.7;
+h3,
+.item_title{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
 }
+
+h4,
+.box_title{
+
+}
+
 
 .centre {
     margin: 0 auto;
