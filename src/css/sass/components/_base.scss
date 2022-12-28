@@ -129,6 +129,20 @@ h4,h5,
     font-weight: 700;
 }
 
+article blockquote {
+    padding-left: 25px;
+    position: relative;
+    font-size: 22px;
+}
+
+article blockquote::before {
+    content: "”";
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
 
 .centre {
     margin: 0 auto;
