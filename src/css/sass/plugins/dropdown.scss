@@ -1,8 +1,9 @@
+/*DROPDOWN*/
 .dropdown {
     position: relative;
     height: 42px;
     border: 1px solid #d7d7d7;
-    border-radius: 3px;
+    border-radius: var(--elem-border-radius);
     transition: width 0.3s;
 }
 .dropdown_short {
@@ -28,6 +29,7 @@
     background-color: #fff;
     position: relative;
     float: left;
+    border-radius: var(--elem-border-radius);
 }
 .dropdown.short .overflow {
     width: 138px;
@@ -73,7 +75,7 @@
 }
 .dropdown_short ul {
     border: 1px solid #d7d7d7;
-    border-radius: 3px;
+    border-radius: var(--elem-border-radius);
     top: 28px;
     overflow: auto;
 }
@@ -124,6 +126,7 @@
     height: 40px;
     transition: background-color 0.3s;
     cursor: pointer;
+    border-radius: var(--elem-border-radius);
 }
 .drop_arrow:after {
     content: "";
@@ -146,7 +149,7 @@
     right: -1px;
     top: -1px;
     background-color: #70c46a;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 var(--elem-border-radius) var(--elem-border-radius) 0;
     width: 31px;
     height: 30px;
 }

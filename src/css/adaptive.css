@@ -6,10 +6,130 @@
 }
 @media only screen and (min-width: 768px) {
   /*HEADER*/
+  .site_header-top {
+    padding: 24px 0;
+  }
+
+  .logo_header-img {
+    margin-right: 22px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo_header-name {
+    font-size: 30px;
+    margin-bottom: 6px;
+  }
+
+  .logo_header-location {
+    font-size: 16px;
+  }
+
+  .user_box {
+    display: block;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .user_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .user_btn .btn + .btn {
+    margin-top: 6px;
+  }
+
+  .user_btn .btn.register_btn {
+    background-color: var(--site-bg-color);
+    border-color: var(--site-bg-color);
+    color: var(--primary);
+  }
+
+  .user_btn .btn.register_btn:hover {
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
+    border-color: var(--btn-border);
+  }
+
+  .user_menu-desc {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 235px;
+    background-color: var(--primary);
+    border-radius: var(--elem-border-radius);
+  }
+
+  .user_menu-desc a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  .site_header-bottom {
+    display: block;
+    position: relative;
+  }
+
+  .site_header-bottom::before {
+    content: "";
+    width: 100vw;
+    max-width: 1280px;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .site_header-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site_header-bottom a {
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    padding: 20px;
+    color: var(--text-contrast);
+    transition: 0.3s;
+  }
+
+  .site_header-bottom a:hover {
+    color: var(--btn-text-hover);
+    background-color: var(--btn-bg-hover);
+    border-color: var(--btn-border-hover);
+  }
+
+  .site_header-bottom a.active {
+    background: linear-gradient(0deg, #0476c0 29%, #2596d3 74%);
+  }
+
+  .site_header-bottom a.active:hover {
+    color: var(--text-contrast);
+  }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
   /*HEADER*/
+  .user_btn {
+    flex-direction: row;
+  }
+
+  .user_btn .btn + .btn {
+    margin: 0 0 0 16px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   /*HEADER*/
+  .site_header-bottom::before {
+    border-radius: var(--elem-border-radius);
+  }
 }

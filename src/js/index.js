@@ -75,4 +75,16 @@ $(function () {
     };
 
     $('.order_delivery').dropdown()
+
+    $('.header_menu-btn').on('click', function (e) {
+        e.preventDefault();
+
+        $('.header_menu-box').addClass('active');
+        $('body').addClass('body_overflow');
+    })
+
+    $('.header_menu-close').on('click', function (e) {
+        $('.header_menu-box').removeClass('active');
+        $('body').removeClass('body_overflow');
+    })
 })
