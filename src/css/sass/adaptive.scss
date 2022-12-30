@@ -1,21 +1,27 @@
 @import "components/header/header-adaptive";
+@import "components/footer/footer-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include header-480;
+    @include footer-480;
 }
 
 @media only screen and (min-width : 640px)  {
     @include header-640;
+    @include footer-640;
 }
 
 @media only screen and (min-width : 768px)  {
     @include header-768;
+    @include footer-768;
 }
 
 @media only screen and (min-width : 980px) {
     @include header-980;
+    @include footer-980;
 }
 
 @media only screen and (min-width : 1280px) {
     @include header-1280;
+    @include footer-1280;
 }

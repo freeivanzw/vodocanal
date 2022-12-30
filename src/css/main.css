@@ -39,6 +39,7 @@
   --icon-color: #0375bf;
   --active-icon-color: #addcfb;
   --link-color: #0375bf;
+  --site-shadow: 0px 10px 20px 0px rgba(0,0,0,0.25);
   --section-bottom: 38px;
   --elem-border-radius: 5px;
 }
@@ -971,4 +972,119 @@ button.btn:disabled:hover {
 
 .site_header-bottom {
   display: none;
+}
+
+/*FOOTER*/
+.site_footer {
+  position: relative;
+}
+
+.site_footer .centre {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 46px 0;
+}
+
+.footer_content::before {
+  content: "";
+  width: 100vw;
+  max-width: 1280px;
+  height: 100%;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  box-shadow: var(--site-shadow);
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.footer_info .logo_text {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.footer_info .logo_text span {
+  color: var(--primary);
+}
+
+.footer_phone-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer_phone-list a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.footer_phone-list li:nth-child(1) a {
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.footer_phone-list li:nth-child(1) a:hover,
+.footer_phone-list a:hover {
+  color: var(--link-color);
+}
+
+.footer_menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_menu-item + .footer_menu-item {
+  margin-top: 12px;
+}
+
+.footer_menu-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.footer_menu-item ul li + li {
+  margin-top: 3px;
+}
+
+.footer_menu-item ul a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.footer_menu-item ul a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.footer_copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.footer_copy a {
+  text-align: end;
 }

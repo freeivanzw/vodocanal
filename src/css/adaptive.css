@@ -1,8 +1,33 @@
 @media only screen and (min-width: 480px) {
   /*HEADER*/
+  /*FOOTER*/
 }
 @media only screen and (min-width: 640px) {
   /*HEADER*/
+  /*FOOTER*/
+  .footer_content {
+    flex-direction: row;
+  }
+
+  .footer_info {
+    flex: 0 1 50%;
+    margin-bottom: 0;
+  }
+
+  .footer_menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+  }
+
+  .footer_menu-item {
+    width: 50%;
+    padding: 0 0 20px 20px;
+  }
+
+  .footer_menu-item + .footer_menu-item {
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   /*HEADER*/
@@ -116,6 +141,8 @@
   .site_header-bottom a.active:hover {
     color: var(--text-contrast);
   }
+
+  /*FOOTER*/
 }
 @media only screen and (min-width: 980px) {
   /*HEADER*/
@@ -123,13 +150,60 @@
     flex-direction: row;
   }
 
+  .user_btn::before {
+    content: "";
+    width: 190px;
+    height: 107px;
+    background-image: url("../images/header-btn-bg.jpg");
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
   .user_btn .btn + .btn {
     margin: 0 0 0 16px;
+  }
+
+  /*FOOTER*/
+  .footer_content {
+    padding: 90px 0 96px 0;
+  }
+
+  .footer_info .logo_text {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .footer_phone-title {
+    font-size: 18px;
+  }
+
+  .footer_phone-list li:nth-child(1) a {
+    font-size: 24px;
+  }
+
+  .footer_menu-title {
+    font-size: 18px;
+  }
+
+  .footer_menu-item {
+    padding: 0 0 25px 60px;
+  }
+
+  .footer_copy {
+    padding: 30px 0;
   }
 }
 @media only screen and (min-width: 1280px) {
   /*HEADER*/
   .site_header-bottom::before {
+    border-radius: var(--elem-border-radius);
+  }
+
+  /*FOOTER*/
+  .footer_content::before {
     border-radius: var(--elem-border-radius);
   }
 }

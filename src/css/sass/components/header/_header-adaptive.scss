@@ -124,6 +124,19 @@
     /*HEADER*/
     .user_btn {
         flex-direction: row;
+
+    }
+
+    .user_btn::before {
+        content: "";
+        width: 190px;
+        height: 107px;
+        background-image: url('../images/header-btn-bg.jpg');
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        z-index: -1;
     }
 
     .user_btn .btn + .btn {
