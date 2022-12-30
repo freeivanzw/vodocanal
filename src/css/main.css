@@ -19,7 +19,7 @@
 :root {
   --primary: #0375bf;
   --secondary: #addcfb;
-  --success: #65e930;
+  --success: #65E930FF;
   --info: #30e9e7;
   --warning: #e9d130;
   --danger: #e94630;
@@ -716,18 +716,14 @@ button.btn:disabled:hover {
 }
 
 .btn.btn_tmp-2 {
-  color: #fff;
-  background: #65e930;
-  background: linear-gradient(180deg, #65e930 48%, #62d136 54%);
+  color: var(--text-contrast);
+  background: var(--success);
   border-color: transparent;
 }
 
 .btn.btn_tmp-2:hover {
-  color: #fff;
-  background: #65e930;
-  background: linear-gradient(180deg, #65e930 48%, #62d136 54%);
-  border-color: transparent;
-  filter: saturate(1.25);
+  color: var(--success);
+  background: var(--text-contrast);
 }
 
 .btn .icon {
