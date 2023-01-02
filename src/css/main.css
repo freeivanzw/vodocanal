@@ -1213,8 +1213,13 @@ button.btn:disabled:hover {
   transition: 0.3s;
 }
 
+.toggle_variants a:hover {
+  opacity: 1;
+}
+
 .toggle_variants a.active {
   text-decoration: underline;
+  cursor: unset;
   opacity: 1;
 }
 
@@ -1259,5 +1264,51 @@ button.btn:disabled:hover {
 }
 
 .register_error a {
+  color: var(--text-contrast);
+}
+
+.register_sms {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+}
+
+.register_sms-title {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.register_sms-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.register_sms-box input {
+  min-width: 1px;
+}
+
+.register_sms-box .btn {
+  width: 100%;
+}
+
+.resend_sms {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.resend_sms a {
+  color: var(--text-contrast);
+  margin-right: 8px;
+}
+
+.resend_sms a.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.change_pass {
+  font-size: 16px;
   color: var(--text-contrast);
 }

@@ -319,6 +319,21 @@
     border-radius: var(--elem-border-radius);
   }
 
+  .footer_content::after {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 640px);
+    background-image: url(../images/footer-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
+
   /*NEWS*/
   .news {
     padding: 95px 0 60px 0;
