@@ -1,6 +1,8 @@
 @media only screen and (min-width: 480px) {
   /*HEADER*/
   /*FOOTER*/
+  /*NEWS*/
+  /*REGISTER FORM*/
 }
 @media only screen and (min-width: 640px) {
   /*HEADER*/
@@ -28,6 +30,9 @@
   .footer_menu-item + .footer_menu-item {
     margin-top: 0;
   }
+
+  /*NEWS*/
+  /*REGISTER FORM*/
 }
 @media only screen and (min-width: 768px) {
   /*HEADER*/
@@ -143,6 +148,41 @@
   }
 
   /*FOOTER*/
+  /*NEWS*/
+  .news_list {
+    justify-content: space-between;
+  }
+
+  .news_list li {
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  .news_text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /*REGISTER FORM*/
+  .register_form .centre {
+    display: flex;
+  }
+
+  .register_text {
+    flex: 0 1 55%;
+    justify-content: center;
+    padding: 46px 20px 46px 0;
+  }
+
+  .register_box {
+    flex: 0 1 45%;
+    margin: -22px 0;
+    padding: 50px 40px;
+    border-radius: var(--elem-border-radius);
+  }
+
+  .login_form {
+    padding: 0 30px;
+  }
 }
 @media only screen and (min-width: 980px) {
   /*HEADER*/
@@ -193,7 +233,79 @@
   }
 
   .footer_copy {
+    font-size: 16px;
     padding: 30px 0;
+  }
+
+  /*NEWS*/
+  .news::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../images/news-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
+
+  .news_list li {
+    flex: 0 1 calc(50% - 45px);
+    margin-bottom: 40px;
+  }
+
+  /*REGISTER FORM*/
+  .register_form::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/register-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
+
+  .register_info {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .register_preference {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+
+  .toggle_variants {
+    margin-bottom: 62px;
+  }
+
+  .login_form-title {
+    font-size: 16px;
+  }
+
+  .login_form input {
+    height: 56px;
+    font-size: 22px;
+  }
+
+  .login_form .btn {
+    min-height: 56px;
+    font-size: 18px;
+    margin-bottom: 62px;
+  }
+
+  .register_bottom-help {
+    font-size: 16px;
+    line-height: 1.2;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -205,5 +317,35 @@
   /*FOOTER*/
   .footer_content::before {
     border-radius: var(--elem-border-radius);
+  }
+
+  /*NEWS*/
+  .news {
+    padding: 95px 0 60px 0;
+  }
+
+  .news::before {
+    border-radius: var(--elem-border-radius);
+  }
+
+  .news::after {
+    width: 300px;
+    height: 300px;
+    right: 50%;
+    transform: translateX(640px);
+    border-radius: 0 var(--elem-border-radius) 0 0;
+  }
+
+  /*REGISTER FORM*/
+  .register_form::before {
+    border-radius: var(--elem-border-radius);
+  }
+
+  .register_form::after {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translateX(-640px);
+    border-radius: 0 var(--elem-border-radius) 0 0;
   }
 }
