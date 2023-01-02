@@ -32,11 +32,15 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-image: url(../images/news-bg.png);
+        background-image: url(../images/news-bg-1.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 0 0;
         z-index: -1;
+    }
+
+    .news.danger_news::after {
+        background-image: url(../images/news-bg.png);
     }
 
     .news_list li {

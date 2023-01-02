@@ -603,6 +603,10 @@ a:hover {
   text-decoration: none;
 }
 
+article > * {
+  margin-bottom: 24px;
+}
+
 article a {
   color: var(--link-color);
   text-decoration: none;
@@ -1191,6 +1195,7 @@ button.btn:disabled:hover {
   margin: 0 -10px;
   padding: 24px 10px;
   background-color: var(--primary);
+  background: linear-gradient(315deg, #2798d4 0%, #0375bf 100%);
   color: var(--text-contrast);
 }
 
@@ -1311,4 +1316,39 @@ button.btn:disabled:hover {
 .change_pass {
   font-size: 16px;
   color: var(--text-contrast);
+}
+
+/*MAIN ARTICLE*/
+.main_article {
+  margin-bottom: var(--section-bottom);
+  padding: 40px 0;
+  position: relative;
+}
+
+.main_article::before {
+  content: "";
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  background-color: #ebf7ff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.main_article::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../images/article-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
 }
