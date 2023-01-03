@@ -1,0 +1,76 @@
+@mixin info-two-480 {
+    /*INFO TWO*/
+}
+
+@mixin info-two-640 {
+    /*INFO TWO*/
+    .info_two .centre {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info_two .col-1 {
+        flex: 0 1 50%;
+        padding-right: 8px;
+    }
+
+    .info_two .col-2 {
+        flex: 0 1 50%;
+        padding-left: 8px;
+    }
+    .info_two .col-3 {
+        flex: 0 1 100%;
+    }
+}
+
+@mixin info-two-768 {
+    /*INFO TWO*/
+    .info_two .col-1 {
+        flex: 1 1 auto;
+        padding-right: 8px;
+    }
+
+    .select_number,
+    .select_box {
+        display: flex;
+    }
+
+    .select_number b,
+    .select_box b {
+        padding: 2px 0;
+    }
+
+    .info_user > li {
+        display: flex;
+        grid-gap: unset;
+    }
+
+    .info_user > li + li {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .info_user > li > b {
+        margin-right: 6px;
+    }
+
+    .info_two .col-2 {
+        flex: 0 1 250px;
+        padding-left: 8px;
+    }
+}
+
+@mixin info-two-980 {
+    /*INFO TWO*/
+    .info_two .main_title img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@mixin info-two-1280 {
+    /*INFO TWO*/
+    .info_two::before {
+        border-radius: var(--elem-border-radius);
+    }
+}

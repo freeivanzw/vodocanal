@@ -4,6 +4,8 @@
   /*NEWS*/
   /*REGISTER FORM*/
   /*MAIN ARTICLE*/
+  /*INFO ONE*/
+  /*INFO TWO*/
 }
 @media only screen and (min-width: 640px) {
   /*HEADER*/
@@ -35,6 +37,26 @@
   /*NEWS*/
   /*REGISTER FORM*/
   /*MAIN ARTICLE*/
+  /*INFO ONE*/
+  /*INFO TWO*/
+  .info_two .centre {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info_two .col-1 {
+    flex: 0 1 50%;
+    padding-right: 8px;
+  }
+
+  .info_two .col-2 {
+    flex: 0 1 50%;
+    padding-left: 8px;
+  }
+
+  .info_two .col-3 {
+    flex: 0 1 100%;
+  }
 }
 @media only screen and (min-width: 768px) {
   /*HEADER*/
@@ -187,6 +209,50 @@
   }
 
   /*MAIN ARTICLE*/
+  /*INFO ONE*/
+  .info_one-list {
+    flex-direction: row;
+  }
+
+  .info_one-list > span {
+    margin: 0 12px 0 0;
+    padding: 2px 0;
+  }
+
+  /*INFO TWO*/
+  .info_two .col-1 {
+    flex: 1 1 auto;
+    padding-right: 8px;
+  }
+
+  .select_number,
+.select_box {
+    display: flex;
+  }
+
+  .select_number b,
+.select_box b {
+    padding: 2px 0;
+  }
+
+  .info_user > li {
+    display: flex;
+    grid-gap: unset;
+  }
+
+  .info_user > li + li {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .info_user > li > b {
+    margin-right: 6px;
+  }
+
+  .info_two .col-2 {
+    flex: 0 1 250px;
+    padding-left: 8px;
+  }
 }
 @media only screen and (min-width: 980px) {
   /*HEADER*/
@@ -317,6 +383,37 @@
   }
 
   /*MAIN ARTICLE*/
+  /*INFO ONE*/
+  .info_one-header {
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  .info_one-header .main_title img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info_one-header .main_title {
+    margin: 0 26px 0 0;
+  }
+
+  .info_one-header .btn {
+    margin-left: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .info_one-text {
+    line-height: 1.5;
+    margin-bottom: 26px;
+  }
+
+  /*INFO TWO*/
+  .info_two .main_title img {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   /*HEADER*/
@@ -389,5 +486,15 @@
     right: 50%;
     transform: translateX(640px);
     border-radius: 0 var(--elem-border-radius) 0 0;
+  }
+
+  /*INFO ONE*/
+  .info_one::before {
+    border-radius: var(--elem-border-radius);
+  }
+
+  /*INFO TWO*/
+  .info_two::before {
+    border-radius: var(--elem-border-radius);
   }
 }

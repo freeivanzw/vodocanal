@@ -1,0 +1,131 @@
+/*INFO TWO*/
+
+.info_two {
+    margin-bottom: var(--section-bottom);
+    padding: 26px 0;
+    position: relative;
+}
+
+.info_two::before {
+    content: "";
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    background-color: #ebf7ff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.info_two.info_two-rozrah::before {
+    background-color: #ffebeb;
+}
+
+.info_two .main_title {
+    display: flex;
+}
+
+.info_two .main_title img {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.select_number,
+.select_box {
+    margin-bottom: 12px;
+}
+
+.info_user {
+    margin-bottom: 22px;
+}
+
+.info_user > li {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info_user > li + li {
+    padding-top: 5px;
+    margin-top: 5px;
+    border-top: 1px solid var(--border-color);
+}
+
+.number_list,
+.select_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number_list a,
+.select_list a {
+    text-decoration: none;
+    display: block;
+    padding: 2px 5px;
+}
+
+.number_list a.active,
+.select_list a.active {
+    text-decoration: underline;
+}
+
+.info_two .col-2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.dropdown_info {
+    margin-bottom: 12px;
+}
+
+.last_counter {
+    margin-bottom: 12px;
+}
+
+.add_counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    margin-bottom: 12px;
+}
+
+.add_counter > span{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_counter input {
+    min-width: 1px;
+}
+
+.add_counter-btn {
+    width: 100%;
+}
+
+.info_table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 22px;
+}
+
+.info_table-wrap table {
+    width: 100%;
+    min-width: 640px;
+    background-color: var(--site-bg-color);
+    border-collapse: collapse;
+}
+
+.info_table-wrap th,
+.info_table-wrap td {
+    text-align: start;
+    padding: 5px;
+    border: 1px solid #333;
+}

@@ -89,58 +89,124 @@
     </div>
 </header>
 <main>
-    <!--REGISTER FORM-->
-    <section class="register_form">
+    <!--INFO ONE-->
+    <section class="info_one">
         <div class="centre">
-            <div class="register_text">
-                <span class="main_title">Вхід / Реєстрація</span>
-                <span class="register_info">Після реєстрація Ви отримаєте наступні можливості:</span>
-                <ul class="register_preference">
-                    <li>Подати покази</li>
-                    <li>Переглянути історію показів та платежів</li>
-                    <li>Завантажити квитанцію для оплати</li>
-                    <li>Завантажити квитанцію для оплати</li>
-                </ul>
+            <div class="info_one-header">
+                <span class="main_title"><img src="./images/info-temp-1.png">Швидка допомога по кабінету</span>
                 <a href="#" class="btn">Інструкція по кабінету</a>
             </div>
-            <div class="register_box">
-                <div class="toggle_variants">
-                    <a href="#" class="active">Увійти</a>
-                    <span>/</span>
-                    <a href="#">Зареєструватись</a>
+            <span class="info_one-text">На цій сторінці кабінету Ви можете переглядати важливе повідомлення від Водоканалу та ознайомитись з інструкцією по користуванню кабінетом.</span>
+            <span class="info_one-current">Ви знаходитесь в розділі: Розрахунки.</span>
+            <div class="info_one-list">
+                <span>Перелік всіх розділів Вашого кабінету:</span>
+                <ul>
+                    <li><a href="#">Важлива інформація</a></li>
+                    <li><a href="#" class="active">Розрахунки</a></li>
+                    <li><a href="#">Лічильники</a></li>
+                    <li><a href="#">Налаштування</a></li>
+                    <li><a href="#">Квитанція</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--INGO TWO-->
+    <section class="info_two info_two-rozrah">
+        <div class="centre">
+            <div class="col-1">
+                <span class="main_title"><img src="./images/info-temp-3.png">Розрахунок</span>
+                <div class="select_number">
+                    <b>Особовий рахунок: </b>
+                    <ul class="number_list">
+                        <li><a href="#">12544587,</a></li>
+                        <li><a href="#" class="active">54875692,</a></li>
+                        <li><a href="#">15483650, </a></li>
+                    </ul>
                 </div>
-                <!--<form class="login_form">
-                    <span class="login_form-title"><b>Для того, щоб увійти в кабінет,</b> введіть Ваш номер телефону:</span>
-                    <input type="tel" placeholder="Телефон">
-                    <button type="submit" class="btn btn_tmp-2">Увійти</button>
-                </form>-->
-                <!--<form class="login_form">
-                    <span class="login_form-title"><b>Для того, щоб зареєструватись,</b> введіть Ваш номер телефону:</span>
-                    <input type="tel" placeholder="Телефон">
-                    <button type="submit" class="btn btn_tmp-2">Зареєструватись</button>
-                </form>-->
-                <!--<div class="register_error">
-                    <b>Помилка “Підозріла активність”.</b>
-                    <span>Вхід та Реєстрація заблоковані на 24 години.</span>
-                </div>-->
-                <!--<div class="register_error">
-                    <b>Помилка дію скасовано.</b>
-                    <span>Ви ще не зарєстровані? - <a href="#">Зареєструватись</a></span>
-                    <span>Ви вже зареєстровані? - <a href="#">Увійти</a></span>
-                </div>-->
-                <div class="register_sms">
-                    <span class="register_sms-title">На Ваш номер телефону +380 (97) 145 01 49 надіслано смс з кодом, введіть його:</span>
-                    <form class="register_sms-box">
-                        <input type="text">
-                        <button type="submit" class="btn btn_tmp-2">Підтвердити</button>
-                    </form>
-                    <div class="resend_sms">
-                        <a href="#" class="disabled">Надісліти SMS повторно</a>
-                        <span>(доступно через 50 сек)</span>
-                    </div>
-                    <a href="#" class="change_pass">Змінити номер телефону</a>
+                <ul class="info_user">
+                    <li><b>Заборгованість: </b><span class="danger">54 грн.</span></li>
+                    <li><b>Прізвище ім’я по-батькові: </b><span>Романчук Володимир Володимирович</span></li>
+                    <li><b>Населений пункт, вулиця, будинок/квартира: </b><span>м. Миколаїв, вул. Львівська, 1 / 23</span></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <div class="dropdown dropdown_info">
+                    <div class="overflow"><span>Особ. рах: 54875692</span><button type="button" class="drop_arrow"></button></div>
+                    <ul>
+                        <li><a href="#">12312311</a></li>
+                        <li><a href="#">12312313</a></li>
+                        <li><a href="#">123123124</a></li>
+                        <li><a href="#">12312315</a></li>
+                    </ul>
                 </div>
-                <div class="register_bottom-help">Якщо виникають труднощі - зателефонуйте або напишіть до нас, ми допоможемо вирішити проблему. Перейти до <a href="#">контактів</a>.</div>
+                <span>Ви можете робити оплату за <a href="#">реквізитами</a> або <a href="#">розрукувати квитанцію</a> та оплатити в банку.</span>
+            </div>
+            <div class="col-3">
+                <span class="main_title">Історія розрахунків</span>
+                <div class="select_box">
+                    <b>Рік:</b>
+                    <ul class="select_list">
+                        <li><a href="#">2020</a></li>
+                        <li><a href="#">2021</a></li>
+                        <li><a href="#" class="active">2022</a></li>
+                    </ul>
+                </div>
+                <div class="select_box">
+                    <b>Місяць:</b>
+                    <ul class="select_list">
+                        <li><a href="#">Cічень</a></li>
+                        <li><a href="#" class="active">Лютий</a></li>
+                        <li><a href="#">Березень</a></li>
+                        <li><a href="#">Квітень</a></li>
+                    </ul>
+                </div>
+                <div class="info_table-wrap">
+                    <table>
+                        <tr>
+                            <th>Вміст комірки</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                            <th>Заг.</th>
+                        </tr>
+                        <tr>
+                            <td>Вміст комірки</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                        </tr>
+                        <tr>
+                            <td>Вміст комірки</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                            <td>Заг.</td>
+                        </tr>
+                    </table>
+                </div>
+                <span>Інформація завантажується з програми обліку, якщо виникають труднощі під час завантаження - спробуйте оновити сторінку через декілька хвилин. Якщо виникли запитаня, на які не можете знайти відповідь - звертайтесь до консультанта - перейти на сторінку <a href="#">контакти.</a></span>
             </div>
         </div>
     </section>

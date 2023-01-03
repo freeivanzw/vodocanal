@@ -3,6 +3,8 @@
 @import "components/news/news-adaptive";
 @import "components/register-form/register-form-adaptive";
 @import "components/main-article/main-article-adaptive";
+@import "components/info-one/info-one-adaptive";
+@import "components/info-two/info-two-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include header-480;
@@ -10,6 +12,8 @@
     @include news-480;
     @include register-form-480;
     @include main-article-480;
+    @include info-one-480;
+    @include info-two-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -18,6 +22,8 @@
     @include news-640;
     @include register-form-640;
     @include main-article-640;
+    @include info-one-640;
+    @include info-two-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -26,6 +32,8 @@
     @include news-768;
     @include register-form-768;
     @include main-article-768;
+    @include info-one-768;
+    @include info-two-768;
 }
 
 @media only screen and (min-width : 980px) {
@@ -34,6 +42,8 @@
     @include news-980;
     @include register-form-980;
     @include main-article-980;
+    @include info-one-980;
+    @include info-two-980;
 }
 
 @media only screen and (min-width : 1280px) {
@@ -42,4 +52,6 @@
     @include news-1280;
     @include register-form-1280;
     @include main-article-1280;
+    @include info-one-1280;
+    @include info-two-1280;
 }

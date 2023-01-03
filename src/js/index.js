@@ -75,6 +75,7 @@ $(function () {
     };
 
     $('.order_delivery').dropdown()
+    $('.dropdown_info').dropdown()
 
     $('.header_menu-btn').on('click', function (e) {
         e.preventDefault();
