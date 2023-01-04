@@ -221,7 +221,7 @@
 
   /*INFO TWO*/
   .info_two .col-1 {
-    flex: 1 1 auto;
+    flex: 0 1 calc(100% - 250px);
     padding-right: 8px;
   }
 

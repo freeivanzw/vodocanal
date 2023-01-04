@@ -89,18 +89,77 @@
     </div>
 </header>
 <main>
-    <ul style="display: flex; flex-direction: column; align-items: center; font-size: 22px; margin: 0 0 60px 0">
-        <li><a href="./index.html">index</a></li>
-        <li><a href="./contacts.html">contacts</a></li>
-        <li><a href="./login-reg.html">login-reg</a></li>
-        <li><a href="./news.html">news</a></li>
-        <li><a href="./payment.html">payment</a></li>
-        <li><a href="./kab-main.html">kab-main</a></li>
-        <li><a href="./kab-kvytansiya.html">kab-kvytansiya</a></li>
-        <li><a href="./kab-lichilnuk.html">kab-lichilnuk</a></li>
-        <li><a href="./kab-rozrahunok.html">kab-rozrahunok</a></li>
-        <li><a href="./kab-settings.html">kab-settings</a></li>
-    </ul>
+    <!--INFO ONE-->
+    <section class="info_one">
+        <div class="centre">
+            <div class="info_one-header">
+                <span class="main_title"><img src="./images/info-temp-1.png">Швидка допомога по кабінету</span>
+                <a href="#" class="btn">Інструкція по кабінету</a>
+            </div>
+            <span class="info_one-text">На цій сторінці кабінету Ви можете переглядати важливе повідомлення від Водоканалу та ознайомитись з інструкцією по користуванню кабінетом.</span>
+            <span class="info_one-current">Ви знаходитесь в розділі: Розрахунки.</span>
+            <div class="info_one-list">
+                <span>Перелік всіх розділів Вашого кабінету:</span>
+                <ul>
+                    <li><a href="#">Важлива інформація</a></li>
+                    <li><a href="#" class="active">Розрахунки</a></li>
+                    <li><a href="#">Лічильники</a></li>
+                    <li><a href="#">Налаштування</a></li>
+                    <li><a href="#">Квитанція</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--INGO TWO-->
+    <section class="info_two">
+        <div class="centre">
+            <div class="col-1">
+                <span class="main_title"><img src="./images/info-temp-4.png">Ваші особові рахунки / лічильники</span>
+                <b class="list_counter-title">Ваші приєднані особові рахунки:</b>
+                <ul class="list_counter">
+                    <li><span>Особовий рахунок: <b>12544587</b></span><a href="#">Відєднати</a></li>
+                    <li><span>Особовий рахунок: <b>12544587</b></span><a href="#">Відєднати</a></li>
+                    <li><span>Особовий рахунок: <b>12544587</b></span><a href="#">Відєднати</a></li>
+                    <li><span>Особовий рахунок: <b>12544587</b></span><a href="#">Відєднати</a></li>
+                </ul>
+                <span>Для приєднаня особового рахунку введіть номер особового рахунку і код, які вказані на квитанції.</span>
+            </div>
+            <div class="col-2">
+                <form class="add_new-counter">
+                    <b>Додати соб. рах. / лічильник:</b>
+                    <input type="number" placeholder="Номер особового рахунку">
+                    <input type="number" placeholder="Код з квитанції">
+                    <button type="submit" class="btn">Додати особ. Рах.</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--INGO TWO-->
+    <section class="info_two info_two-settings">
+        <div class="centre">
+            <div class="col-1">
+                <span class="main_title"><img src="./images/info-temp-5.png">Ваші реєстраційні дані</span>
+                <b class="reg_settings-title">Дані, які Ви вказали при реєстрації на сайті:</b>
+                <ul class="reg_settings-list">
+                    <li><span>E-mail адреса: <b>test@gmail.com</b></span><a href="#">Змінити</a></li>
+                    <li><span>Номер телефону: <b>+380977012345</b></span><a href="#">Змінити</a></li>
+                    <li><span>Пароль: <b>*********</b></span><a href="#">Змінити</a></li>
+                </ul>
+                <b>Пароль зашифровано, його неможливо переглянути, його можливо лише змінити.</b>
+            </div>
+            <div class="col-2">
+                <form class="settings_form">
+                    <b class="settings_form-title">Зміна e-mail:</b>
+                    <span class="current_settings">Є зараз: test@gmail.com</span>
+                    <label>
+                        <b>Змінити на:</b>
+                        <input type="email" placeholder="Введіть нову e-mail адресу">
+                    </label>
+                    <button type="submit" class="btn">Змінити</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </main>
 <!--FOOTER-->
 <footer class="site_footer">
