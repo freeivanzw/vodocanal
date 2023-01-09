@@ -218,11 +218,15 @@ button.btn:disabled:hover {
 .btn.active {
     color: var(--btn-text);
     border-color: #0364a3;
-    background: linear-gradient(0deg, rgba(4,118,192,1) 29%, rgba(37,150,211,1) 74%);
+    background: linear-gradient(0deg, rgba(5,119,192,1) 45%, rgba(37,150,211,1) 55%);
 }
 
 .btn.active:hover {
     filter: contrast(1.2);
+}
+
+.btn.active:hover .icon {
+    fill: var(--btn-text);
 }
 
 .btn.btn_tmp-2 {
@@ -241,7 +245,7 @@ button.btn:disabled:hover {
     color: var(--text-contrast);
     background: var(--success);
     border-color: var(--success);
-    background: linear-gradient(0deg, rgba(98,209,54,1) 36%, rgba(101,233,48,1) 66%);
+    background: linear-gradient(0deg, rgba(98,209,54,1) 45%, rgba(101,233,48,1) 55%);
 }
 
 .btn .icon {

@@ -68,8 +68,9 @@
     color: var(--text-color);
     text-decoration: none;
     display: block;
-    padding: 2px 5px;
+    padding: 0 5px;
     transition: 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 .info_one-list ul a:hover {
@@ -77,5 +78,5 @@
 }
 
 .info_one-list ul a.active {
-    text-decoration: underline;
+    border-color: var(--text-color)
 }

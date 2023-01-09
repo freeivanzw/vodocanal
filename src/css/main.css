@@ -321,7 +321,7 @@ select {
   right: 4px;
   top: 4px;
   background-color: var(--primary);
-  background: linear-gradient(0deg, #0476c0 29%, #2596d3 74%);
+  background: linear-gradient(0deg, #0577c0 45%, #2596d3 55%);
   border: none;
   width: 32px;
   height: 32px;
@@ -746,11 +746,15 @@ button.btn:disabled:hover {
 .btn.active {
   color: var(--btn-text);
   border-color: #0364a3;
-  background: linear-gradient(0deg, #0476c0 29%, #2596d3 74%);
+  background: linear-gradient(0deg, #0577c0 45%, #2596d3 55%);
 }
 
 .btn.active:hover {
   filter: contrast(1.2);
+}
+
+.btn.active:hover .icon {
+  fill: var(--btn-text);
 }
 
 .btn.btn_tmp-2 {
@@ -769,7 +773,7 @@ button.btn:disabled:hover {
   color: var(--text-contrast);
   background: var(--success);
   border-color: var(--success);
-  background: linear-gradient(0deg, #62d136 36%, #65e930 66%);
+  background: linear-gradient(0deg, #62d136 45%, #65e930 55%);
 }
 
 .btn .icon {
@@ -1196,7 +1200,7 @@ button.btn:disabled:hover {
   margin: 0 -10px;
   padding: 24px 10px;
   background-color: var(--primary);
-  background: linear-gradient(315deg, #2798d4 0%, #0375bf 100%);
+  background: linear-gradient(0deg, #0577c0 45%, #2596d3 55%);
   color: var(--text-contrast);
 }
 
@@ -1423,8 +1427,9 @@ button.btn:disabled:hover {
   color: var(--text-color);
   text-decoration: none;
   display: block;
-  padding: 2px 5px;
+  padding: 0 5px;
   transition: 0.3s;
+  border-bottom: 2px solid transparent;
 }
 
 .info_one-list ul a:hover {
@@ -1432,7 +1437,7 @@ button.btn:disabled:hover {
 }
 
 .info_one-list ul a.active {
-  text-decoration: underline;
+  border-color: var(--text-color);
 }
 
 /*INFO TWO*/
@@ -1514,11 +1519,12 @@ button.btn:disabled:hover {
   text-decoration: none;
   display: block;
   padding: 2px 5px;
+  border-bottom: 2px solid transparent;
 }
 
 .number_list a.active,
 .select_list a.active {
-  text-decoration: underline;
+  border-color: var(--link-color);
 }
 
 .reg_settings-title,

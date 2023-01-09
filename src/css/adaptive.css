@@ -146,25 +146,23 @@
   .site_header-bottom ul {
     display: flex;
     flex-wrap: wrap;
+    padding: 5px 0;
   }
 
   .site_header-bottom a {
+    font-size: 16px;
     text-decoration: none;
     font-weight: 700;
     display: block;
-    padding: 20px;
+    padding: 15px 20px;
     color: var(--text-contrast);
+    border-radius: var(--elem-border-radius);
     transition: 0.3s;
   }
 
-  .site_header-bottom a:hover {
-    color: var(--btn-text-hover);
-    background-color: var(--btn-bg-hover);
-    border-color: var(--btn-border-hover);
-  }
-
-  .site_header-bottom a.active {
-    background: linear-gradient(0deg, #0476c0 29%, #2596d3 74%);
+  .site_header-bottom a:hover,
+.site_header-bottom a.active {
+    background: linear-gradient(0deg, #0577c0 45%, #2596d3 55%);
   }
 
   .site_header-bottom a.active:hover {
